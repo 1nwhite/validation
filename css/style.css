@@ -1,0 +1,59 @@
+.main {
+    /*background: url('/images/home-bg.jpg') no-repeat;*/
+    background-size: cover;
+}
+.form-wrapper {
+    background: black;
+    background-color: rgba(0,0,0,0.85);
+    padding: 4rem 1.8rem;
+    width: 92%;
+    margin: auto;
+}
+h1 {
+    color: rgb(161, 16, 203);
+    font-size: 1.6rem;
+}
+label {
+    cursor: pointer;
+}
+.form input:not([type='checkbox']),
+.form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0!important;
+    position: relative;
+    border-color: rgba(0,0,0,0.2);
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 1px;
+    height: 48px;
+    margin: initial;
+    -webkit-appearance: none;
+}
+.input-row {
+    padding: 4px;
+    position: relative;
+}
+.input-row span {
+    font-size: 0.9rem;
+}
+.text-error {
+    display: none;
+    font-size: 0.55rem;
+    position: absolute;
+    z-index: 1;
+    padding: 1px 3px;
+    right: 4px;
+    transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
+    .form-wrapper {
+        width: 100%;
+        padding: 2.3rem 1.3rem;
+    }
+}
